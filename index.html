@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Información Personal</title>
-    <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Información Personal</title>
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="page">
-    <main class="profile">
-        <section class="card">
-            <img src= "data:image/jpeg;base64,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">
-            <header class="card__header">
-                <h1 class="card__title">Información Personal</h1>
-                <p class="card__subtitle">Perfil académico y personal</p>
-            </header>
 
-            <div class="info-list">
-                <article class="info-item">
-                    <h2 class="info-item__title">Nombre</h2>
-                    <p class="info-item__text">Axel Josue Montoya Ovares</p>
-                </article>
+<main class="profile">
 
-                <article class="info-item">
-                    <h2 class="info-item__title">De dónde es</h2>
-                    <p class="info-item__text">Naranjo, Alajuela</p>
-                </article>
+<section class="card">
 
-                <article class="info-item">
-                    <h2 class="info-item__title">Carrera</h2>
-                    <p class="info-item__text">Ingeniería en Sistemas</p>
-                </article>
+<header class="card__header">
 
-                <article class="info-item">
-                    <h2 class="info-item__title">Residencia</h2>
-                    <p class="info-item__text">BN-2</p>
-                </article>
-            </div>
-        </section>
-    </main>
+<div class="header-bg">
+<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..." alt="Foto de perfil">
+<div class="overlay"></div>
+</div>
+
+<div class="header-content">
+<h1 class="card__title">Información Personal</h1>
+<p class="card__subtitle">Perfil académico y personal</p>
+</div>
+
+</header>
+
+
+<div class="info-list">
+
+<article class="info-item">
+<h2 class="info-item__title">Nombre</h2>
+<p class="info-item__text">Axel Josue Montoya Ovares</p>
+</article>
+
+<article class="info-item">
+<h2 class="info-item__title">De dónde es</h2>
+<p class="info-item__text">Naranjo, Alajuela</p>
+</article>
+
+<article class="info-item">
+<h2 class="info-item__title">Carrera</h2>
+<p class="info-item__text">Ingeniería en Sistemas</p>
+</article>
+
+<article class="info-item">
+<h2 class="info-item__title">Residencia</h2>
+<p class="info-item__text">BN-2</p>
+</article>
+
+</div>
+
+</section>
+
+</main>
+
 </body>
 </html>
